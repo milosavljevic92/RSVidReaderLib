@@ -1,0 +1,140 @@
+# =========================
+# Build folders
+# =========================
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# =========================
+# Visual Studio
+# =========================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Rider / JetBrains
+# =========================
+.idea/
+*.sln.iml
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# NuGet
+# =========================
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Keep packages config if needed
+!packages/build/
+
+# =========================
+# Publish output
+# =========================
+publish/
+app.publish/
+PublishProfiles/
+
+# =========================
+# Test Results
+# =========================
+TestResults/
+*.trx
+
+# =========================
+# Resharper
+# =========================
+_ReSharper*/
+*.DotSettings.user
+
+# =========================
+# Windows
+# =========================
+Thumbs.db
+Desktop.ini
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+
+# =========================
+# Generated files
+# =========================
+Generated\ Files/
+
+# =========================
+# SQL Server / LocalDB
+# =========================
+*.mdf
+*.ldf
+
+# =========================
+# Azure
+# =========================
+.csx/
+ecf/
+rcf/
+
+# =========================
+# Certificates / Secrets
+# =========================
+*.pfx
+*.snk
+secrets.json
+appsettings.Development.json
+
+# =========================
+# Entity Framework
+# =========================
+*.dbmdl
+
+# =========================
+# ClickOnce
+# =========================
+*.publishsettings
+
+# =========================
+# Single-file publish
+# =========================
+*.runtimeconfig.dev.json
+
+# =========================
+# WinForms designer cache
+# =========================
+*.cache
+
+# =========================
+# JetBrains Rider caches
+# =========================
+.idea/
+*.sln.iml
+
+# =========================
+# Mac/Linux
+# =========================
+.DS_Store
+.directory
+
+# =========================
+# Optional:
+# Uncomment if using SQLite locally
+# =========================
+# *.db
+# *.sqlite
+# *.sqlite3
