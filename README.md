@@ -79,19 +79,19 @@ try
 {
     RsVidData card = await RsVidReader.ReadAsync();
 
-    txtRegistracija.Text   = card.RegistrationNumber;
-    txtBrojSasije.Text     = card.VehicleIDNumber;
-    txtBrojMotora.Text     = card.EngineIDNumber;
-    txtMarka.Text          = card.CommercialDescription;
-    txtGodProizvodnje.Text = card.YearOfProduction;
-    txtKubikaza.Text       = card.EngineCapacity;
-    txtKs.Text             = card.MaximumNetPower;
-    txtSopstvenaMasa.Text  = card.VehicleMass;
-    txtUkupnaMasa.Text     = card.MaximumPermissibleLadenMass;
-    txtNosivost.Text       = card.VehicleLoad;
-    txtBrSedista.Text      = card.NumberOfSeats;
-    txtTipVozila.Text      = card.VehicleCategory;
-    txtBrojLicence.Text    = card.UnambiguousNumber;
+    Console.WriteLine($"Registration     : {card.RegistrationNumber}");
+    Console.WriteLine($"Chassis (VIN)    : {card.VehicleIDNumber}");
+    Console.WriteLine($"Engine number    : {card.EngineIDNumber}");
+    Console.WriteLine($"Model            : {card.CommercialDescription}");
+    Console.WriteLine($"Year             : {card.YearOfProduction}");
+    Console.WriteLine($"Engine capacity  : {card.EngineCapacity} cc");
+    Console.WriteLine($"Max net power    : {card.MaximumNetPower} kW");
+    Console.WriteLine($"Own mass         : {card.VehicleMass} kg");
+    Console.WriteLine($"Max laden mass   : {card.MaximumPermissibleLadenMass} kg");
+    Console.WriteLine($"Load capacity    : {card.VehicleLoad} kg");
+    Console.WriteLine($"Seats            : {card.NumberOfSeats}");
+    Console.WriteLine($"Category         : {card.VehicleCategory}");
+    Console.WriteLine($"Unique number    : {card.UnambiguousNumber}");
 }
 catch (CardNotFoundException ex)
 {
